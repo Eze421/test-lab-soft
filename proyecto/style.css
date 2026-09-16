@@ -1,7 +1,265 @@
-body {
-	background: #eef2ff;
-	color: #1e293b;
+/* ==============================
+   ESTILOS GENERALES
+   ============================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-h1 {
-	color: #1d4ed8;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  color: #3d3028;
+}
+
+/* ==============================
+   ENCABEZADO
+   ============================== */
+
+header {
+  background: linear-gradient(135deg, #8b5e3c, #c98b5b);
+  color: white;
+  text-align: center;
+  padding: 45px 20px 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* ==============================
+   NAVEGACIÓN
+   ============================== */
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe0b2;
+  text-decoration: underline;
+}
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+   ============================== */
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* Cada sección */
+
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(80, 50, 30, 0.1);
+  border-left: 5px solid #c98b5b;
+}
+
+section h2 {
+  color: #8b5e3c;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* ==============================
+   LISTA DE CUIDADOS
+   ============================== */
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li strong {
+  color: #8b5e3c;
+}
+
+/* ==============================
+   IMAGEN
+   ============================== */
+
+figure {
+  margin-top: 25px;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #6b5a4d;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ==============================
+   ALIMENTACIÓN
+   ============================== */
+
+#alimentacion p:last-child {
+  background-color: #fff0d9;
+  border-left: 4px solid #e09a3e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#alimentacion strong {
+  color: #a35c00;
+}
+
+/* ==============================
+   TABLA
+   ============================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+caption {
+  caption-side: top;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #6b4a32;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border: 1px solid #e5d4c4;
+}
+
+th {
+  background-color: #8b5e3c;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff4e8;
+}
+
+tbody tr:hover {
+  background-color: #ffe5ca;
+  transition: background-color 0.2s ease;
+}
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+
+footer {
+  background-color: #3d3028;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 40px;
+}
+
+footer h2 {
+  color: #ffd19a;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+/* ==============================
+   DISEÑO RESPONSIVE
+   ============================== */
+
+/* Tablets y celulares */
+
+@media (max-width: 700px) {
+
+  header {
+    padding: 35px 15px 25px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  main {
+    width: 94%;
+    margin: 25px auto;
+  }
+
+  section {
+    padding: 22px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
 }
