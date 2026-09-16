@@ -1,3 +1,68 @@
-<header>
-	<h1>Mi proyecto</h1>
-</header>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Información básica para cuidar a tu perrito con cariño y responsabilidad." />
+    <title>Todo sobre perritos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🐾 Todo sobre perritos</h1>
+      <p>Guía simple para una vida sana, feliz y llena de ladridos.</p>
+      <nav aria-label="Navegación principal">
+        <a href="#cuidados">Cuidados</a> |
+        <a href="#alimentacion">Alimentación</a> |
+        <a href="#datos">Datos curiosos</a> |
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="bienvenida">
+        <h2 id="bienvenida">Los perros son grandes compañeros</h2>
+        <p>Cada perrito necesita tiempo, afecto, paseos y cuidados diarios. Tener uno es una responsabilidad hermosa: él dependerá de vos para estar seguro y saludable.</p>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Un perro golden retriever mirando a cámara" width="600" />
+          <figcaption>Con paciencia y cariño, tu perrito será un amigo para toda la vida.</figcaption>
+        </figure>
+      </section>
+
+      <section id="cuidados" aria-labelledby="titulo-cuidados">
+        <h2 id="titulo-cuidados">Cuidados básicos</h2>
+        <ul>
+          <li><strong>Paseos:</strong> necesita salir todos los días para ejercitarse y explorar.</li>
+          <li><strong>Veterinario:</strong> mantené al día sus vacunas, desparasitación y controles.</li>
+          <li><strong>Higiene:</strong> cepillá su pelo, revisá sus orejas y bañalo cuando lo necesite.</li>
+          <li><strong>Juego:</strong> los juguetes y el tiempo compartido ayudan a su bienestar.</li>
+        </ul>
+      </section>
+
+      <section id="alimentacion" aria-labelledby="titulo-alimentacion">
+        <h2 id="titulo-alimentacion">Alimentación saludable</h2>
+        <p>Elegí un alimento adecuado para su edad y tamaño. Dejá siempre un recipiente con agua limpia y fresca. Consultá al veterinario antes de cambiar su dieta.</p>
+        <p><strong>Importante:</strong> el chocolate, las uvas, las pasas y la cebolla pueden ser peligrosos para los perros.</p>
+      </section>
+
+      <section id="datos" aria-labelledby="titulo-datos">
+        <h2 id="titulo-datos">Datos curiosos</h2>
+        <table>
+          <caption>Pequeñas curiosidades sobre los perritos</caption>
+          <thead><tr><th scope="col">Dato</th><th scope="col">¿Sabías que...?</th></tr></thead>
+          <tbody>
+            <tr><td>Olfato</td><td>Su sentido del olfato es mucho más potente que el de las personas.</td></tr>
+            <tr><td>Comunicación</td><td>También se expresan con la cola, las orejas y su postura.</td></tr>
+            <tr><td>Sueño</td><td>Los cachorros y perros mayores suelen dormir más horas.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <h2>¿Querés saber más?</h2>
+      <p>Hablar con un veterinario es la mejor opción ante cualquier duda sobre la salud de tu mascota.</p>
+      <p>Hecho con 🐶 para amantes de los perritos.</p>
+    </footer>
+  </body>
+</html>
